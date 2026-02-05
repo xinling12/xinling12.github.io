@@ -51,9 +51,9 @@ export default function Contact() {
           {/* Contact Info Card */}
           <div className="lg:col-span-1 bg-slate-900 text-white rounded-3xl p-10 flex flex-col justify-between shadow-2xl">
             <div className="space-y-8">
-              <h3 className="text-2xl font-bold">Contact Information</h3>
+              <h3 className="text-2xl font-bold">Contact Protecher</h3>
               <p className="text-slate-300">
-                Fill out the form and our team will get back to you within 24 hours.
+                Get in touch with Yuan Dai (Ryan) directly for your next project.
               </p>
               
               <div className="space-y-6">
@@ -62,8 +62,8 @@ export default function Contact() {
                   <div>
                     <p className="font-semibold text-white">Our Office</p>
                     <p className="text-slate-400 text-sm mt-1">
-                      123 Tech Park Blvd<br />
-                      Brisbane, QLD 4000<br />
+                      Level 3/155 Queen St<br />
+                      Brisbane City, QLD 4000<br />
                       Australia
                     </p>
                   </div>
@@ -72,8 +72,8 @@ export default function Contact() {
                 <div className="flex items-start space-x-4">
                   <Phone className="h-6 w-6 text-primary shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold text-white">Phone</p>
-                    <p className="text-slate-400 text-sm mt-1">+61 7 3000 0000</p>
+                    <p className="font-semibold text-white">Direct Line</p>
+                    <p className="text-slate-400 text-sm mt-1">0431 781 694</p>
                   </div>
                 </div>
                 
@@ -81,14 +81,14 @@ export default function Contact() {
                   <Mail className="h-6 w-6 text-primary shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-white">Email</p>
-                    <p className="text-slate-400 text-sm mt-1">hello@protecher.com.au</p>
+                    <p className="text-slate-400 text-sm mt-1">protecherAU@gmail.com</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <Clock className="h-6 w-6 text-primary shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold text-white">Business Hours</p>
+                    <p className="font-semibold text-white">Consultation Hours</p>
                     <p className="text-slate-400 text-sm mt-1">Mon - Fri: 9am - 5pm</p>
                   </div>
                 </div>

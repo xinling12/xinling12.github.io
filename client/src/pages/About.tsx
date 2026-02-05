@@ -21,7 +21,7 @@ export default function About() {
             transition={{ delay: 0.2 }}
             className="text-xl text-slate-300 max-w-2xl mx-auto"
           >
-            Brisbane's most trusted technology partners, dedicated to helping local and global businesses thrive.
+            Led by Yuan Dai (Ryan), Protecher is Brisbane's most trusted technology partner, dedicated to helping local and global businesses thrive.
           </motion.p>
         </div>
       </section>
@@ -30,16 +30,16 @@ export default function About() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-slate-900">Our Story</h2>
+            <h2 className="text-3xl font-bold text-slate-900">Our Founder's Vision</h2>
             <div className="w-20 h-1 bg-primary"></div>
             <p className="text-lg text-slate-600 leading-relaxed">
-              Founded in 2018 in the heart of Brisbane, Protecher began with a simple mission: to bridge the gap between complex technology and business goals.
+              Protecher was founded by Yuan Dai (Ryan) with a vision to make high-end enterprise technology accessible to local businesses in Brisbane.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
-              We noticed that many businesses were struggling to keep up with the rapid pace of digital transformation. They didn't just need software; they needed strategic partners who understood their unique challenges.
+              With years of experience in custom software and systems architecture, Ryan brings a personalized approach to every project, ensuring that Protecher doesn't just deliver code, but real business value.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
-              Today, we are a diverse team of engineers, designers, and strategists working together to build solutions that matter.
+              Whether you're a restaurant looking to streamline orders or a property agency needing a custom CRM, Ryan and the Protecher team work directly with you to build solutions that scale.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">

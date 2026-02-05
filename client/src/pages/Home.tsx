@@ -38,8 +38,8 @@ export default function Home() {
             </motion.div>
             
             <motion.p variants={fadeIn} className="text-lg text-slate-600 max-w-xl leading-relaxed">
-              We transform complex business challenges into elegant digital solutions. 
-              From custom software to strategic consulting, we are your partners in innovation.
+              Led by Yuan Dai (Ryan), Protecher transforms complex business challenges into elegant digital solutions. 
+              From custom software to strategic consulting, we are your partners in innovation right here in Brisbane.
             </motion.p>
             
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
