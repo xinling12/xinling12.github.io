@@ -1,16 +1,12 @@
 import { z } from 'zod';
+import { insertInquirySchema } from './schema';
 
 export const api = {
   inquiries: {
     create: {
       method: 'POST' as const,
       path: '/api/inquiries',
-      input: z.object({
-        name: z.string(),
-        email: z.string().email(),
-        subject: z.string(),
-        message: z.string(),
-      }),
+      input: insertInquirySchema,
       responses: {
         200: z.object({ success: z.boolean() }),
       },
