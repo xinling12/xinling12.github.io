@@ -12,7 +12,7 @@ export async function registerRoutes(
     {
       id: 1,
       title: "Custom App Development",
-      description: "Tailored mobile and web applications designed to meet your specific business needs and goals.",
+      description: "Tailored mobile and web applications designed to meet your specific business needs and goals, from startups to enterprises.",
       icon: "Smartphone",
       category: "Development"
     },
@@ -26,7 +26,7 @@ export async function registerRoutes(
     {
       id: 3,
       title: "IT Strategy Consulting",
-      description: "Expert guidance on digital transformation, infrastructure planning, and technology adoption.",
+      description: "Expert guidance on digital transformation, infrastructure planning, and technology adoption for sustainable growth.",
       icon: "Briefcase",
       category: "Consulting"
     },
@@ -50,6 +50,20 @@ export async function registerRoutes(
       description: "Comprehensive security assessments to protect your business assets and customer data.",
       icon: "Shield",
       category: "Security"
+    },
+    {
+      id: 7,
+      title: "Managed IT Support",
+      description: "Round-the-clock technical support and maintenance to keep your business operations running smoothly.",
+      icon: "LifeBuoy",
+      category: "Support"
+    },
+    {
+      id: 8,
+      title: "Digital Transformation",
+      description: "Modernize your legacy systems and workflows with cutting-edge digital solutions.",
+      icon: "Zap",
+      category: "Consulting"
     }
   ];
 
@@ -57,18 +71,42 @@ export async function registerRoutes(
     {
       id: 1,
       title: "Brisbane Eats Delivery App",
-      description: "A comprehensive food delivery platform connecting local Brisbane restaurants with customers.",
+      description: "A comprehensive food delivery platform connecting local Brisbane restaurants with customers. Features real-time tracking and payment integration.",
       clientIndustry: "Restaurant",
       technologies: ["React Native", "Node.js", "PostgreSQL"],
-      imageUrl: "https://images.unsplash.com/photo-1526304640152-d4619684e484?auto=format&fit=crop&q=80&w=800"
+      imageUrl: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 2,
       title: "PropTech Estate CRM",
-      description: "Custom CRM solution for a leading property agency to manage listings and client relationships.",
+      description: "Custom CRM solution for a leading property agency to manage listings, client relationships, and automated document generation.",
       clientIndustry: "Real Estate",
       technologies: ["React", "Python", "Django"],
       imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      id: 3,
+      title: "Retail Inventory System",
+      description: "Cloud-based inventory management system for a multi-store retail chain with predictive stock analysis.",
+      clientIndustry: "Retail",
+      technologies: ["Vue.js", "Go", "AWS"],
+      imageUrl: "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      id: 4,
+      title: "HealthConnect Telemedicine",
+      description: "A secure telehealth platform for remote patient consultations, electronic health records, and prescription management.",
+      clientIndustry: "Healthcare",
+      technologies: ["Next.js", "TypeScript", "WebRTC"],
+      imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      id: 5,
+      title: "EduPulse Learning Management",
+      description: "Interactive e-learning platform for schools and corporate training with progress tracking and multimedia support.",
+      clientIndustry: "Education",
+      technologies: ["React", "Express", "MongoDB"],
+      imageUrl: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800"
     }
   ];
 
