@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Custom App Development",
+    "description": "Tailored mobile and web applications designed to meet your specific business needs and goals, from startups to enterprises.",
+    "icon": "Smartphone",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "Enterprise Web Solutions",
+    "description": "Scalable, secure, and high-performance websites for businesses ranging from restaurants to property agencies.",
+    "icon": "Globe",
+    "category": "Development"
+  },
+  {
+    "id": 3,
+    "title": "IT Strategy Consulting",
+    "description": "Expert guidance on digital transformation, infrastructure planning, and technology adoption for sustainable growth.",
+    "icon": "Briefcase",
+    "category": "Consulting"
+  },
+  {
+    "id": 4,
+    "title": "Cloud Infrastructure",
+    "description": "Secure and reliable cloud migration and management services on AWS, Azure, or Google Cloud.",
+    "icon": "Cloud",
+    "category": "Infrastructure"
+  },
+  {
+    "id": 5,
+    "title": "Data Analytics",
+    "description": "Turn your data into actionable insights with our business intelligence and reporting solutions.",
+    "icon": "BarChart",
+    "category": "Data"
+  },
+  {
+    "id": 6,
+    "title": "Cybersecurity Audits",
+    "description": "Comprehensive security assessments to protect your business assets and customer data.",
+    "icon": "Shield",
+    "category": "Security"
+  },
+  {
+    "id": 7,
+    "title": "Managed IT Support",
+    "description": "Round-the-clock technical support and maintenance to keep your business operations running smoothly.",
+    "icon": "LifeBuoy",
+    "category": "Support"
+  },
+  {
+    "id": 8,
+    "title": "Digital Transformation",
+    "description": "Modernize your legacy systems and workflows with cutting-edge digital solutions.",
+    "icon": "Zap",
+    "category": "Consulting"
+  }
+]
