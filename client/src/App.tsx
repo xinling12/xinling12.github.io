@@ -12,6 +12,9 @@ import Services from "@/pages/Services";
 import Portfolio from "@/pages/Portfolio";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
+import Testimonials from "@/pages/Testimonials";
+import Process from "@/pages/Process";
+import FAQ from "@/pages/FAQ";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -20,6 +23,9 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/services" component={Services} />
       <Route path="/portfolio" component={Portfolio} />
+      <Route path="/process" component={Process} />
+      <Route path="/testimonials" component={Testimonials} />
+      <Route path="/faq" component={FAQ} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />

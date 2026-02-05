@@ -21,9 +21,12 @@ export function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="font-display font-bold text-white mb-4 uppercase tracking-wider text-xs">Navigation</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-sm">
               <li><Link href="/services" className="hover:text-blue-400 transition-colors">Services</Link></li>
               <li><Link href="/portfolio" className="hover:text-blue-400 transition-colors">Portfolio</Link></li>
+              <li><Link href="/process" className="hover:text-blue-400 transition-colors">How We Work</Link></li>
+              <li><Link href="/testimonials" className="hover:text-blue-400 transition-colors">Success Stories</Link></li>
+              <li><Link href="/faq" className="hover:text-blue-400 transition-colors">FAQ</Link></li>
               <li><Link href="/about" className="hover:text-blue-400 transition-colors">About Protecher</Link></li>
               <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Contact Ryan</Link></li>
             </ul>
