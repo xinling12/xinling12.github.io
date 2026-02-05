@@ -1,16 +1,42 @@
 import type { Express } from "express";
-import { createServer, type Server } from "http";
+import type { Server } from "http";
 import { storage } from "./storage";
+import { api } from "@shared/routes";
+import { z } from "zod";
 
 export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  // put application routes here
-  // prefix all routes with /api
+  
+  // Initialize seed data
+  await storage.seedData();
 
-  // use storage to perform CRUD operations on the storage interface
-  // e.g. storage.insertUser(user) or storage.getUserByUsername(username)
+  app.post(api.inquiries.create.path, async (req, res) => {
+    try {
+      const input = api.inquiries.create.input.parse(req.body);
+      await storage.createInquiry(input);
+      res.status(201).json({ success: true, message: "Inquiry received" });
+    } catch (err) {
+      if (err instanceof z.ZodError) {
+        return res.status(400).json({
+          message: err.errors[0].message,
+          field: err.errors[0].path.join('.'),
+        });
+      }
+      throw err;
+    }
+  });
+
+  app.get(api.services.list.path, async (req, res) => {
+    const services = await storage.getServices();
+    res.json(services);
+  });
+
+  app.get(api.projects.list.path, async (req, res) => {
+    const projects = await storage.getProjects();
+    res.json(projects);
+  });
 
   return httpServer;
 }
