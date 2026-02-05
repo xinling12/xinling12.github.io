@@ -1,28 +1,18 @@
 import { z } from 'zod';
-import { insertInquirySchema, services, projects } from './schema';
-
-export const errorSchemas = {
-  validation: z.object({
-    message: z.string(),
-    field: z.string().optional(),
-  }),
-  notFound: z.object({
-    message: z.string(),
-  }),
-  internal: z.object({
-    message: z.string(),
-  }),
-};
 
 export const api = {
   inquiries: {
     create: {
       method: 'POST' as const,
       path: '/api/inquiries',
-      input: insertInquirySchema,
+      input: z.object({
+        name: z.string(),
+        email: z.string().email(),
+        subject: z.string(),
+        message: z.string(),
+      }),
       responses: {
-        201: z.object({ success: z.boolean(), message: z.string() }),
-        400: errorSchemas.validation,
+        200: z.object({ success: z.boolean() }),
       },
     },
   },
@@ -31,7 +21,13 @@ export const api = {
       method: 'GET' as const,
       path: '/api/services',
       responses: {
-        200: z.array(z.custom<typeof services.$inferSelect>()),
+        200: z.array(z.object({
+          id: z.number(),
+          title: z.string(),
+          description: z.string(),
+          icon: z.string(),
+          category: z.string(),
+        })),
       },
     },
   },
@@ -40,7 +36,14 @@ export const api = {
       method: 'GET' as const,
       path: '/api/projects',
       responses: {
-        200: z.array(z.custom<typeof projects.$inferSelect>()),
+        200: z.array(z.object({
+          id: z.number(),
+          title: z.string(),
+          description: z.string(),
+          clientIndustry: z.string(),
+          technologies: z.array(z.string()),
+          imageUrl: z.string().nullable(),
+        })),
       },
     },
   },
